@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add, subtract, multiply, and divide two numbers using arithmetic operators</h1>
+    <script>
+        let num1 = parseInt(prompt("Enter Numbwer 1 : "));
+        let num2 = parseInt(prompt("Enter Numbwer 2 : "));
+
+        let operators = prompt("Enter add for 1 , subtract for 2 , multiply for 3 and divide for 4")
+
+        if (operators == 1){
+            console.log(num1 + num2)
+        }else if (operators == 2){
+            console.log(num1 - num2)
+        }else if (operators == 3){
+            console.log(num1 * num2)
+        }else if (operators == 4){
+            console.log(num1 / num2)
+        }else{
+            console.log("enter a valid operators");
+        }
+
+    </script>
+</body>
+</html>
