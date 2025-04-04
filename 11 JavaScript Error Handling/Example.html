@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divide by Zero Example</title>
+</head>
+<body>
+
+<h2>Divide a Number by Zero</h2>
+
+<!-- Button to trigger the division -->
+<button onclick="divideByZero()">Divide</button>
+
+<!-- Area to show result or error -->
+<p id="output"></p>
+
+<script>
+function divideByZero() {
+  let number = 9;
+  let result;
+  let output = document.getElementById("output");
+
+  try {
+    // Attempt division by zero
+    result = number / 0;
+
+    // Check if result is Infinity (which means division by zero happened)
+    if (!isFinite(result)) {
+      throw new Error("Cannot divide by zero!");
+    }
+
+    output.textContent = "Result: " + result;
+  } catch (error) {
+    output.textContent = "Error: " + error.message;
+  }
+}
+</script>
+
+</body>
+</html>
